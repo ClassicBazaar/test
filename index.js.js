@@ -23,8 +23,8 @@ app.post('/data',function(req,res){
     res.send('<h1> hai '+req.query.firstname+'</h1>')
 })
 
-
+let PORT=process.env.PORT
 // app.listen will create a port
-app.listen(3000,function(){
+app.listen(PORT,function(){
     console.log("server started")
 })
